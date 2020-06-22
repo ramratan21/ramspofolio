@@ -1,0 +1,231 @@
+html {
+    padding: 0;
+    margin: 0;
+    font-size: 1vw;
+}
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+}
+
+.container {
+    width: 100%;
+}
+
+#heading {
+    background-image: url("./back-ground_h.jpg");
+    background-position: center;
+    background-size: cover;
+    height:700px;
+}
+
+header {
+    width: 100%;
+    height: 5rem;
+    background-color: #2B2B2B;
+    opacity: 0.37;
+    position: fixed;
+    z-index: 19;
+}
+
+nav {
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.5rem 6rem auto auto;
+}
+
+.navigation {
+    text-decoration: none;
+    margin: 0 0.5rem;
+    color:rgb(255, 255, 255, 100%);
+    font-size: 1.5rem;
+}
+
+#heading-content {
+    color:#DCDCDC;
+    margin: 0 5rem;
+    font-family: 'Caveat', cursive;
+    position: relative;
+    top: 5rem;
+}
+
+#welcome {
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.65rem;
+    word-spacing: 6px;
+    letter-spacing: 2px;
+    color: #999E9E;
+}
+
+#intro{
+    font-size: 7.5rem;
+    position: relative;
+    top: -70px;
+}
+
+#comment {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.45rem;
+    position: relative;
+    top: -120px;
+
+}
+
+@media only screen and (max-width: 850px){
+    
+    #heading {
+        height: 400px;
+    }
+    #comment{
+        font-size: 1.5rem;
+        position: relative;
+        top: -30px;
+    }
+
+    #welcome {
+        font-size: 2.5rem;
+    }
+
+    #intro {
+        font-size: 7.5rem;
+        position: static;
+    }
+
+    .navigation {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+#profile {
+    height: 15rem;
+    background-color: #535353;
+}
+
+#id-box {
+    margin: auto;
+    width: 13rem;
+    height: 15.4rem;
+    background-color: rgb(0, 0, 0, 0.61);
+    position: relative;
+    top: -50%;
+    opacity: 100%;
+    border: black 1px solid;
+    border-radius: 1rem;
+}
+
+#pic img {
+    width: 11rem;
+    padding: 0;
+    height: 11rem;
+    margin: 1rem;
+    opacity: 100%;
+    border-radius: 0.4rem;
+}
+
+#sign {
+    font-family: 'Charmonman', cursive;
+    font-size: 1.6rem;
+    text-align: center;
+    color:#D6D4D4;
+    width: 11rem;
+    height: 2rem;
+    margin: 0.6rem 1rem;
+    position: relative;
+    top: -15%;
+    opacity: 100%;
+}
+
+#skills {
+    width: 66rem;
+    height: 7.74rem;
+    background-color: rgb(0, 0, 0, 0.90);
+    display: flex;
+    justify-content: space-around;
+    margin:  auto;
+    position: relative;
+    top: -40%;
+}
+
+.skill img{
+    height: 5rem;
+    width: auto;
+    margin-top: 0.2rem;
+}
+
+.skill h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    position: relative;
+    top: -20%;
+    left: -20%;
+    color: seashell;
+}
+
+
+
+#need {
+    height: auto;
+    margin:0;
+    background-color: #B7B0B0;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.content {
+    width: 50%;
+    margin: 6rem 6rem;
+    flex-shrink: 2;
+
+}
+.content h2 {
+    border-bottom: black 5px solid;
+    padding-bottom: 3rem;
+    font-size: 3rem;
+}
+
+.content p {
+    margin-top: 7rem;
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+
+.content ul {
+    margin-top: 4rem;
+    margin-left: -1rem;
+    text-align: left;
+}
+.content li {
+    margin-top: 2rem ;
+    font-size: 2rem;
+}
+.content img {
+    height: 40rem;
+    box-shadow:0.5rem 0.5rem 1rem slategrey;
+}
+
+#desktop-view {
+    width: 20rem;
+}
+
+#mobile-view {
+    margin-left: 5rem;
+    width: 10rem;
+}
+
+#tablet-view  {
+    height: 40rem;
+    width: 25rem;
+    margin-top: -40%;
+    margin-left: 20%;
+    
+}
