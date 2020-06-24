@@ -25,10 +25,18 @@ body {
 header {
     width: 100%;
     height: 5rem;
-    background-color: #2B2B2B;
-    opacity: 0.37;
+    background-color: #B7B0B0;
+    opacity: 0.7;
     position: fixed;
     z-index: 19;
+    border-bottom:red 0.4rem solid;
+}
+
+.logo img {
+    height: 5rem;
+    width: 10rem;
+    margin-left: 5rem;
+    
 }
 
 nav {
@@ -36,13 +44,15 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 1.5rem 6rem auto auto;
+    position: relative;
+    top: -4rem;
+    margin-right: 5rem;
 }
 
 .navigation {
     text-decoration: none;
     margin: 0 0.5rem;
-    color:rgb(255, 255, 255, 100%);
+    color:black;
     font-size: 1.5rem;
 }
 
@@ -75,34 +85,7 @@ nav {
     font-size: 1.45rem;
     position: relative;
     top: -120px;
-
 }
-
-@media only screen and (max-width: 850px){
-    
-    #heading {
-        height: 400px;
-    }
-    #comment{
-        font-size: 1.5rem;
-        position: relative;
-        top: -30px;
-    }
-
-    #welcome {
-        font-size: 2.5rem;
-    }
-
-    #intro {
-        font-size: 7.5rem;
-        position: static;
-    }
-
-    .navigation {
-        font-size: 2rem;
-    }
-}
-
 
 
 
@@ -147,7 +130,7 @@ nav {
 
 #skills {
     width: 66rem;
-    height: 7.74rem;
+    height: 8rem;
     background-color: rgb(0, 0, 0, 0.90);
     display: flex;
     justify-content: space-around;
@@ -157,8 +140,8 @@ nav {
 }
 
 .skill img{
-    height: 5rem;
-    width: auto;
+    height: 4.5rem;
+    width: 5rem;
     margin-top: 0.2rem;
 }
 
@@ -166,7 +149,7 @@ nav {
     font-size: 1.2rem;
     text-align: center;
     position: relative;
-    top: -20%;
+    top: -1.2rem;
     left: -20%;
     color: seashell;
 }
@@ -191,6 +174,8 @@ nav {
     border-bottom: black 5px solid;
     padding-bottom: 3rem;
     font-size: 3rem;
+    margin-top: 5.5rem;
+    padding-bottom: 5rem;
 }
 
 .content p {
@@ -201,20 +186,21 @@ nav {
 
 .content ul {
     margin-top: 4rem;
-    margin-left: -1rem;
     text-align: left;
 }
 .content li {
     margin-top: 2rem ;
     font-size: 2rem;
+    margin-left: -1rem;
 }
 .content img {
-    height: 40rem;
+    height: 30rem;
     box-shadow:0.5rem 0.5rem 1rem slategrey;
+    margin-top: 6rem;
 }
 
 #desktop-view {
-    width: 20rem;
+    width: 15rem;
 }
 
 #mobile-view {
@@ -223,9 +209,189 @@ nav {
 }
 
 #tablet-view  {
-    height: 40rem;
-    width: 25rem;
+    height: 25rem;
+    width: 15rem;
     margin-top: -40%;
     margin-left: 20%;
+}
+
+#fotomatic-button {
+    position: relative;
+    left: 8rem;
+    top: -1.5rem;
+    font-size: 2rem;
+    background-color: black;
+    color: blanchedalmond;
+    width: 15rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+#fotomatic-button a {
+    text-emphasis: none;
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+
+#text {
+    font-size:1.5rem;
+    margin-top: -2rem;
+}
+
+#portfolio-glimps {
+    background-image: url("./glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg");
+    background-size: cover;
+    height: 40rem;
+    width: 100%;
+    margin-top: -3rem;
+    color: white;
+    text-align: center;
+}
+
+#po-content {
+    position: relative;
+    top: 6rem;
+}
+
+#portfolio-glimps h4 {
+    margin-top: 2rem;
+    color: red;
+}
+
+#po-button {
+    background-color: red;
+    color: black;
+    font-size: 2rem;
+    height: 4rem;
+    width: 14rem;
+    margin: 6rem auto;
+    border-radius: 1.2rem;
+}
+
+#portfolio-glimps a {
+    text-emphasis: none;
+    text-decoration: none;
+    color: black;
     
+}
+
+#footer {
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: red ;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#mobile-footer {
+    display:none;
+}
+
+
+#left {
+   margin: auto 2rem;
+   position: relative;
+   left: -4rem;
+}
+
+span {
+    margin: auto 2rem;
+}
+
+#right {
+    margin: auto 3rem;
+}
+
+footer .logo img {
+    margin-left: -10rem;
+}
+
+@media only screen and (max-width: 850px){
+    
+    #heading {
+        height: 400px;
+    }
+    #comment{
+        font-size: 1.5rem;
+        position: relative;
+        top: -30px;
+    }
+
+    #welcome {
+        font-size: 2.5rem;
+    }
+
+    #intro {
+        font-size: 7.5rem;
+        position: static;
+    }
+
+    .navigation {
+        font-size: 2rem;
+    }
+
+    nav {
+        position: relative;
+        top: -5.5rem;
+    }
+
+    #portfolio-glimps h1 {
+        font-size : 2rem;
+    }
+
+    #portfolio-glimps h4 {
+        font-size : 1.5rem;
+    }
+
+    #po-button {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    
+    #heading {
+        height: 300px;
+    }
+    .skill h3 {
+        margin-top: -0.3rem; 
+
+    }
+    #footer {
+        display: none;
+    }
+    #mobile-footer {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 2rem;
+        text-align: center;
+        background-color: red ;
+    }
+
+    #mobile-footer span {
+        margin: 0.5rem;
+    }
+    #mobile-footer .logo img {
+        margin: 1rem auto;
+        width: 30rem;
+        height: 15rem;
+
+    }
+}
+
+
+@keyframes yourAnimation{
+    0%{
+        transform: rotate(0) translateX(0) translateY(50%);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(0) translateX(0) translateY(0);
+        opacity: 1;
+        }
 }
