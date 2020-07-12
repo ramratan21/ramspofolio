@@ -39,14 +39,22 @@ header {
     
 }
 
-nav {
+#mobile-version {
+    display: none;
+}
+
+#desktop-version {
     float: right;
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: relative;
-    top: -4rem;
+    top: -5rem;
     margin-right: 5rem;
+}
+
+nav a {
+    padding: 0.5rem;
 }
 
 .navigation {
@@ -54,6 +62,12 @@ nav {
     margin: 0 0.5rem;
     color:black;
     font-size: 1.5rem;
+}
+
+nav a:hover {
+    border-bottom: red 0.3rem solid;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px ;
 }
 
 #heading-content {
@@ -186,12 +200,10 @@ nav {
 
 .content ul {
     margin-top: 4rem;
-    text-align: left;
 }
 .content li {
     margin-top: 2rem ;
     font-size: 2rem;
-    margin-left: -1rem;
 }
 .content img {
     height: 30rem;
@@ -284,10 +296,13 @@ nav {
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
+    border-top: black 1rem solid
 }
 
 #mobile-footer {
     display:none;
+    position: absolute;
+
 }
 
 
@@ -354,27 +369,191 @@ footer .logo img {
 @media only screen and (max-width: 500px){
     
     #heading {
-        height: 300px;
+        height: 350px;
+    }
+
+    header {
+        height: 10rem;
+        opacity: 1;
+    }
+
+    header .logo img{
+        height: 10rem;
+        width: 15rem;
+    }
+
+    #desktop-version {
+        display: none;
+    }
+
+    #mobile-version{
+        display: block;
+    }
+
+    #menu-icon {
+    float: right;
+    width: 16rem;
+    height: 10rem;
+    position: relative;
+    top: -6.5rem;
+    }
+
+    #dropdown {
+        width: 100%;
+        height: 30rem;
+        background-color:rgb(0, 0, 0);
+        position: relative;
+        top: -6.5rem;
+        left: -100%;
+        text-decoration: none;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        border-bottom: solid 1.5rem white;
+        border-bottom-right-radius: 2rem;
+        border-bottom-left-radius:2rem;
+    }
+
+    #dropdown a {
+        text-align: center;
+        font-size: 3rem;
+        margin: 1rem 2rem;
+        color: gray;
+    }
+
+    #welcome {
+        position: relative;
+        top: 6rem;
     }
     #comment {
-        margin-top: 3rem;
-    }
-    .skill h3 {
-        margin-top: -0.3rem; 
+        position: relative;
+        font-size: 2.5rem;
+        top: 1rem;
+        color: rgb(255, 255, 255)
 
     }
+
+    #profile {
+        height: 30rem;
+    }
+
+    #id-box {
+        transform: scale(2);
+        top: -10rem;
+    }
+
+    #sign {
+        top: -4rem;
+    }
+
+
+    #skills {
+        transform: scale(1.2);
+        top: 9rem;
+        height: 15rem;
+    }
+
+    #need {
+        height: 250rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    .content {
+        width: 60%;
+    }
+    #need-1 {
+        position: relative;
+        top: -15rem;
+        font-size: 6rem;
+    }
+
+    #need-2 {
+        position: relative;
+        top: -5rem;
+    }
+    .content h2 {
+    border-bottom: black 5px solid;
+    padding-bottom: 3rem;
+    font-size: 4rem;
+    padding-bottom: 5rem;
+}
+    .content img {
+        transform: scale(2);
+    }
+    #desktop-view {
+    width: 15rem;
+    position: relative;
+    left: 10rem;
+    }
+
+    #mobile-view {
+        margin-left: 5rem;
+        width: 10rem;
+        position: relative;
+        left: 25rem;
+    }
+
+    #tablet-view  {
+    height: 25rem;
+    width: 15rem;
+    position: relative;
+    right: 8rem;
+    top: 22rem;
+    margin: 0;
+    padding:0;
+    }
+
+    #fotomatic-button {
+    position: relative;
+    top: 35rem;
+    left: 22rem;
+    font-size: 3rem;
+    background-color: black;
+    color: blanchedalmond;
+    width: 20rem;
+    text-align: center;
+    border-radius: 1rem;
+    }
+
+    #text {
+        position: relative;
+        top: 40rem;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .content p {
+    margin-top: 7rem;
+    font-size: 3rem;
+    margin-right: 2rem;
+    }
+
+    .content ul {
+    margin-top: 4rem;
+    }   
+    .content li {
+    margin-top: 2rem ;
+    font-size: 3rem;
+    margin-left: -6rem;
+    }
+
     #footer {
         display: none;
     }
     #mobile-footer {
+        width: 100%;
         height: 200px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         font-size: 2rem;
         text-align: center;
-        background-color: gray;
-        border-top: solid 2px red;
+        background-color: rgb(192, 92, 59) ;
+        border-top: black 1rem solid
     }
 
     #mobile-footer span {
@@ -384,18 +563,5 @@ footer .logo img {
         margin: 1rem auto;
         width: 30rem;
         height: 15rem;
-
     }
-}
-
-
-@keyframes yourAnimation{
-    0%{
-        transform: rotate(0) translateX(0) translateY(50%);
-        opacity: 0;
-        }
-    100%{
-        transform: rotate(0) translateX(0) translateY(0);
-        opacity: 1;
-        }
 }
